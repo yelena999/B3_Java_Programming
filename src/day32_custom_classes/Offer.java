@@ -27,8 +27,8 @@ package day32_custom_classes;
 public class Offer {
     String location;
     String company;
-    double salary;
-    boolean isFullTime;
+    public double salary;
+    public boolean isFullTime;
     int numberOfPTO;
 
 
@@ -44,6 +44,7 @@ public class Offer {
         this.salary = salary;
     }
 
+    // OVERLOADED CONSTRUCTOR
     public Offer(String location, String company, double salary, boolean isFullTime, int numberOfPTO) {
         this.location = location;
         this.company = company;
@@ -59,7 +60,7 @@ public class Offer {
 
         info += "\n" + (salary > 0 ? salary : "");
 
-        info += "\n" + (isFullTime ? "Full Time" : "Contract");
+        info += "\n" + (isFullTime ? "Full Time" : "");
 
         info += "\n" + (numberOfPTO > 0 ? numberOfPTO : "");
 
@@ -74,4 +75,5 @@ public class Offer {
 
         return info;
     }
+
 }
