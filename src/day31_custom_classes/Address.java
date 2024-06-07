@@ -1,7 +1,6 @@
 package day31_custom_classes;
 
 public class Address {
-
     String street;
     String city;
     String state;
@@ -36,4 +35,5 @@ class Test {
         System.out.println(obj.city);
 
 
-    }}
+    }
+}
